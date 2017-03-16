@@ -1,9 +1,29 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # export .dot file from Protegee and run this script to visualize as .png with Graphviz
 # produces 2 resulting files: a full ontology graph, and a graph with 'Thing' node removed for clearer structure
-
+#
 # Usage:
-# > ./run-graph.sh myExampleOntologyGraph.dot
+# run-graph FILE [-k]
+#       FILE  .dot file exported from Protegee OntoGraph to visualise
+#      -k     keep auxiliary files produced during the execution of the script
+#
+# Example
+# $ ./run-graph.sh myExampleOntologyGraph.dot -k
+
+b=$(tput bold)
+n=$(tput sgr0)
+usage=" Usage:
+$b run-graph$n FILE [-k] 
+$b	FILE$n	.dot file exported from Protegee OntoGraph to visualise
+$b	-k$n	keep auxiliary .dot files produced during the execution of the script
+"
+
+if [ -z "$1" ]; then
+	printf "$usage"
+	exit
+fi
+
+
 
 input_dot=$1
 output_dot="${input_dot/dot/formatted.dot}"
@@ -12,13 +32,19 @@ awk '{gsub(" ([(]Domain>Range[)])|([(]Subclass some[)])","\" color=\"red\" fontc
 
 output_png="$output_dot.png"
 dot $output_dot -o $output_png -Tpng
-#eog -f $output_png
-
 
 output2_dot="${output_dot/\.dot/.pruned.dot}"
 awk '!/owl:Thing/ {print $0}' $output_dot > $output2_dot
 
 output2_png="$output2_dot.png"
 dot $output2_dot -o $output2_png -Tpng
-eog -f $output2_png
 
+if !([ $2 ] && [ $2 == '-k' ]); then
+	rm $output_dot
+	rm $output_png
+	rm $output2_dot
+	out="${input_dot/dot/png}"
+	mv $output2_png $out
+	eog -f $out
+	# printf "Graphs produced, auxiliary files removed\n"
+fi

@@ -7,24 +7,303 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.miappe.org/miappeontology/miappe-draft"
      versionIRI="http://www.miappe.org/miappeontology/miappe-draft/0.0.1">
-    <Prefix name="" IRI="http://www.miappe.org/miappeontology/miappe-draft#"/>
+    <Prefix name="" IRI="http://www.miappe.org/miappeontology/miappe-draft"/>
     <Prefix name="po" IRI="http://purl.obolibrary.org/obo/po"/>
     <Prefix name="geo" IRI="http://www.opengis.net/ont/geosparql#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="geol" IRI="http://www.opengis.net/def/function/geosparql/"/>
+    <Prefix name="geof" IRI="http://www.opengis.net/def/function/geosparql/"/>
+    <Prefix name="geom" IRI="http://geovocab.org/geometry#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="miappeo" IRI="http://www.miappe.org/miappeontology/miappe-draft"/>
+    <Declaration>
+        <Class IRI="#DataItem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generates"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FractionOfOutsideLightLightIncorporatedByGrowthFacilityAndSurroundingStructures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AerialProperty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R/FRRatio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XEO_EnvironmentalVariable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NutritionalProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGenotype"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="geom:Geometry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GettingData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RootingProcessProperty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExtractableContentOfN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpacialObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LightIntensity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AverageLengthOfLightPeriod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlantHandling"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStartDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SowingDensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTaxonomicName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperatureProperty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SubmergingDepth"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="geof:wktLiteral"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVolume"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CO2ContentDuringNight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExperimentalDesign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiosourceProperty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LengthOfLightPeriod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExperimentalDesignGroup"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AverageNightTemperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FertilizerType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CO2DuringLightPeriod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSubmissionDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AverageHumidityDuringNight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentProperty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="rdfs:comment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCommonName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AverageVPDDuringNight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isRankOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalOntologyTerm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CO_"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOrigin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlantPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbioticEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightProperty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NumberOfPlantsPerUnit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HumidityDuringNight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BioticProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteractingOrganism"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="geo:SpatialObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AverageCO2DuringLightPeriod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGrowthFacility"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGeographicName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiosourceGroup"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentManipulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhenotypicVariable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLongitude"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ConcentrationOfP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HumidityDuringLightPeriod"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RangeInWaterPotential"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SubmergingTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataVector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AquaticEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IrrigationType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Method"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLatitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WateringProcessProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isVarietyOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isSubvarietyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modifies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TypesOfLampsUsed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WaterRetentionCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInfraspecificRank"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isFormOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Container"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TreatmentGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBiosource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasReleaseDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHabitat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Experiment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NightTemperature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measures"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CO2ContentDuringDarkPeriod"/>
+    </Declaration>
     <Declaration>
         <Class IRI="#Operation_or_Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Institution"/>
     </Declaration>
     <Declaration>
         <Class IRI="#QuantitativeData"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#generates"/>
+        <NamedIndividual IRI="#ElectricalConductivity"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#appliesTo"/>
@@ -36,40 +315,52 @@
         <Class IRI="#Observation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#XEO_EnvironmentalVariable"/>
+        <NamedIndividual IRI="#DayTemperature"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ExperimentVariable"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GettingData"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dataset"/>
+        <ObjectProperty IRI="#hasExperiment"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasAspect"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CO_PhenotypicVariable"/>
+        <ObjectProperty IRI="#hasCoordinates"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasCoordinates"/>
+        <Class IRI="#Investigation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ConcentrationOfCl"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasOperation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DataProcessing"/>
+        <DataProperty IRI="#hasDimension"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DailyIntegratedPPFD"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isValueOf"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DataProcessing"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Organism"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PlantHandling"/>
+        <NamedIndividual IRI="#ConcentrationOfNa"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Column"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/XEO_00001"/>
@@ -78,16 +369,25 @@
         <Class IRI="#Data"/>
     </Declaration>
     <Declaration>
-        <Datatype abbreviatedIRI="geol:wktLiteral"/>
+        <NamedIndividual IRI="#RootingMediumType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasEnvironmentVariable"/>
+        <Class IRI="#Block"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasExperimentalDesign"/>
+        <DataProperty IRI="#hasAltitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExperimentUnit"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GrowthFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightIntensityProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environment"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasTime"/>
@@ -96,37 +396,43 @@
         <DataProperty IRI="#hasInfraspecificName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasID"/>
+        <Class IRI="#LightQualityProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Environment"/>
+        <DataProperty abbreviatedIRI="rdfs:comment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalUnit"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PO_OrganismLifeStage"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasDuration"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#isSubspeciesOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasEnvironment"/>
+        <Class IRI="#RootingProperty"/>
     </Declaration>
     <Declaration>
         <Class IRI="#QualitativeData"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Time"/>
+        <NamedIndividual IRI="#VPDDuringLightPeriod"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasCommonName"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isRankOf"/>
+        <NamedIndividual IRI="#OrganicMatterContent"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasCoordinates"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ImageData"/>
+        <Class IRI="#RootingMediumProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EnvironmentalVariable"/>
@@ -135,37 +441,49 @@
         <ObjectProperty IRI="#hasUnit"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#AirHumidityProperty"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IrrigationFrequency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CO2Property"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasTitle"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Porosity"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VolumeOfWaterAdded"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Composition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AquaticProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Row"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InitialEnvironmentalSetup"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="geo:SpatialObject"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ExperimentUnit_or_ObservationUnit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Genotype"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasGrowthFacility"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#EnvironmentManipulation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PhenotypicVariable"/>
+        <NamedIndividual IRI="#SoilPenetrationStrength"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ExperimentManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProperty"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Location"/>
@@ -174,31 +492,55 @@
         <ObjectProperty IRI="#contains"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#RangeInPeakLightIntensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasExperimentVariable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SensorGroup"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasLocation"/>
     </Declaration>
     <Declaration>
+        <Datatype abbreviatedIRI="xsd:duration"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#OtherTreatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbstractUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BioticEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExperimentLocation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ExperimentDesign"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#isVarietyOf"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isSubvarietyOf"/>
+        <ObjectProperty IRI="#hasType"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#sets"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Method_or_Protocol"/>
+        <NamedIndividual IRI="#FertilizerAmount"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#modifies"/>
+        <Class IRI="#WateringProperty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TidalPhase"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#describes"/>
@@ -207,28 +549,31 @@
         <Class IRI="#Unit"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasInfraspecificRank"/>
+        <Class IRI="#Plot"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#isFormOf"/>
+        <NamedIndividual IRI="#pH"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#isSubformOf"/>
+        <DataProperty IRI="#hasHeight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GroundEnvironment"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasInitialLifeStage"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#isSubformOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasMethod"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasHabitat"/>
+        <Class IRI="#DataFile"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasBiosource"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Experiment"/>
+        <NamedIndividual IRI="#VPDDuringNight"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hosts"/>
@@ -237,71 +582,555 @@
         <Class IRI="#OrganismLifeStage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#test"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#measures"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasInclination"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasExperimentUnit"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasGenotype"/>
+        <NamedIndividual IRI="#RootingMediumTemperature"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="#CO_PhenotypicVariable"/>
-        <Class IRI="#PhenotypicVariable"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DataProcessing"/>
-        <Class IRI="#GettingData"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dataset"/>
-        <Class IRI="#Data"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#EnvironmentManipulation"/>
-        <Class IRI="#ExperimentManagement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#EnvironmentalVariable"/>
-        <Class IRI="#ExperimentVariable"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ExperimentManagement"/>
-        <Class IRI="#Operation_or_Event"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GettingData"/>
-        <Class IRI="#Operation_or_Event"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GrowthFacility"/>
-        <Class IRI="#ExperimentUnit_or_ObservationUnit"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ImageData"/>
-        <Class IRI="#Data"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#InitialEnvironmentalSetup"/>
-        <Class IRI="#ExperimentManagement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Observation"/>
-        <Class IRI="#GettingData"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OtherTreatment"/>
-        <Class IRI="#ExperimentManagement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PO_OrganismLifeStage"/>
+    <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/PO_0009012"/>
+        <Class IRI="#PO_OrganismLifeStage"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XEO_EnvironmentalVariable"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.obolibrary.org/obo/XEO_00001"/>
+            <Class IRI="#EnvironmentalVariable"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="geom:Geometry"/>
+        <Class IRI="#SpacialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/PO_0009012"/>
+        <Class IRI="#ExternalOntologyTerm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/XEO_00001"/>
+        <Class IRI="#ExternalOntologyTerm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbioticEnvironment"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbstractUnit"/>
+        <Class IRI="#ExperimentUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AerialProperty"/>
+        <Class IRI="#EnvironmentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirHumidityProperty"/>
+        <Class IRI="#AerialProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AquaticEnvironment"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AquaticProperty"/>
+        <Class IRI="#EnvironmentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiosourceGroup"/>
+        <Class IRI="#AbstractUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiosourceProperty"/>
+        <Class IRI="#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioticEnvironment"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioticProperty"/>
+        <Class IRI="#EnvironmentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Block"/>
+        <Class IRI="#ExperimentalDesignGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CO2Property"/>
+        <Class IRI="#AerialProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CO_"/>
+        <Class IRI="#ExternalOntologyTerm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Column"/>
+        <Class IRI="#ExperimentalDesignGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Container"/>
+        <Class IRI="#ExperimentalDesignGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Container"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasHeight"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Container"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasVolume"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Container"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="#hasDimension"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Container"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataFile"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataItem"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataProcessing"/>
+        <Class IRI="#GettingData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataVector"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Environment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasProperty"/>
+            <Class IRI="#EnvironmentProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentManipulation"/>
+        <Class IRI="#ExperimentManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentManipulation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#modifies"/>
+            <Class IRI="#EnvironmentProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentProperty"/>
+        <Class IRI="#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalVariable"/>
+        <Class IRI="#ExperimentVariable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalVariable"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasProperty"/>
+            <Class IRI="#EnvironmentProperty"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBiosource"/>
+            <Class IRI="#Organism"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEnvironment"/>
+            <Class IRI="#Environment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasExperimentVariable"/>
+            <Class IRI="#ExperimentVariable"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasExperimentalDesign"/>
+            <Class IRI="#ExperimentDesign"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOperation"/>
+            <Class IRI="#Operation_or_Event"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasGrowthFacility"/>
+            <Class IRI="#GrowthFacility"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="#ExperimentLocation"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="#hasDescription"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="#hasDuration"/>
+            <Datatype abbreviatedIRI="xsd:duration"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="#hasID"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="#hasStartDate"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="#hasTitle"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentDesign"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasExperimentUnit"/>
+            <Class IRI="#ExperimentUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentLocation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentLocation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasAspect"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentLocation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasHabitat"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentLocation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasInclination"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentManagement"/>
+        <Class IRI="#Operation_or_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentManagement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#sets"/>
+            <Class IRI="#Data"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentUnit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hosts"/>
+            <Class IRI="#Organism"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentVariable"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasMethod"/>
+            <Class IRI="#Method"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentVariable"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasProperty"/>
+            <Class IRI="#Property"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentVariable"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasUnit"/>
+            <Class IRI="#Unit"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentalDesignGroup"/>
+        <Class IRI="#PhysicalUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GettingData"/>
+        <Class IRI="#Operation_or_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GettingData"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#generates"/>
+            <Class IRI="#Data"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroundEnvironment"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrowthFacility"/>
+        <Class IRI="#ExperimentalDesignGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageData"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InitialEnvironmentalSetup"/>
+        <Class IRI="#EnvironmentManipulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteractingOrganism"/>
+        <Class IRI="#BioticProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteractingOrganism"/>
+        <Class IRI="#Organism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Investigation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasExperiment"/>
+            <Class IRI="#Experiment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Investigation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasID"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Investigation"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="#hasDescription"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Investigation"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="#hasTitle"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightIntensityProperty"/>
+        <Class IRI="#LightProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightProperty"/>
+        <Class IRI="#AerialProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightQualityProperty"/>
+        <Class IRI="#LightProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCoordinates"/>
+            <Class IRI="#SpacialObject"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasAltitude"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasID"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasLatitude"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasLongitude"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasGeographicName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NutritionalProperty"/>
+        <Class IRI="#EnvironmentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observation"/>
+        <Class IRI="#GettingData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#measures"/>
+            <Class IRI="#BiosourceProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#measures"/>
+            <Class IRI="#EnvironmentProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operation_or_Event"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#appliesTo"/>
+            <Class IRI="#ExperimentUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operation_or_Event"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMethod"/>
+            <Class IRI="#Method"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operation_or_Event"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTime"/>
+            <Class IRI="#Time"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasInitialLifeStage"/>
+            <Class IRI="#OrganismLifeStage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organism"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasOrigin"/>
+            <ObjectUnionOf>
+                <Class IRI="#Institution"/>
+                <Class IRI="#Location"/>
+            </ObjectUnionOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organism"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasAge"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organism"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCommonName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organism"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasGenotype"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organism"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasInfraspecificRank"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organism"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="#hasInfraspecificName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organism"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="#hasTaxonomicName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherTreatment"/>
+        <Class IRI="#ExperimentManagement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PO_OrganismLifeStage"/>
@@ -312,8 +1141,66 @@
         <Class IRI="#ExperimentVariable"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PhenotypicVariable"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasProperty"/>
+            <Class IRI="#BiosourceProperty"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalUnit"/>
+        <Class IRI="#ExperimentUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalUnit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="#Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalUnit"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasID"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <Class IRI="#ExperimentalDesignGroup"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PlantHandling"/>
         <Class IRI="#ExperimentManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlantHandling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#modifies"/>
+            <Class IRI="#BiosourceProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlantPart"/>
+        <Class IRI="#ExperimentalDesignGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plot"/>
+        <Class IRI="#ExperimentalDesignGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plot"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasArea"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Property"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasValue"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#QualitativeData"/>
@@ -324,20 +1211,233 @@
         <Class IRI="#Data"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#XEO_EnvironmentalVariable"/>
-        <Class IRI="http://purl.obolibrary.org/obo/XEO_00001"/>
+        <Class IRI="#RootingMediumProperty"/>
+        <Class IRI="#RootingProperty"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#XEO_EnvironmentalVariable"/>
-        <Class IRI="#EnvironmentalVariable"/>
+        <Class IRI="#RootingProcessProperty"/>
+        <Class IRI="#RootingProperty"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RootingProperty"/>
+        <Class IRI="#EnvironmentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Row"/>
+        <Class IRI="#ExperimentalDesignGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensorGroup"/>
+        <Class IRI="#AbstractUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperatureProperty"/>
+        <Class IRI="#AerialProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TreatmentGroup"/>
+        <Class IRI="#AbstractUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterProperty"/>
+        <Class IRI="#WateringProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WateringProcessProperty"/>
+        <Class IRI="#WateringProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WateringProperty"/>
+        <Class IRI="#EnvironmentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="geo:SpatialObject"/>
+        <Class IRI="#SpacialObject"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#CO2Property"/>
+        <NamedIndividual IRI="#CO2ContentDuringDarkPeriod"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CO2Property"/>
+        <NamedIndividual IRI="#CO2DuringLightPeriod"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RootingMediumProperty"/>
+        <NamedIndividual IRI="#Composition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NutritionalProperty"/>
+        <NamedIndividual IRI="#ConcentrationOfCl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WaterProperty"/>
+        <NamedIndividual IRI="#ConcentrationOfCl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NutritionalProperty"/>
+        <NamedIndividual IRI="#ConcentrationOfNa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WaterProperty"/>
+        <NamedIndividual IRI="#ConcentrationOfNa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NutritionalProperty"/>
+        <NamedIndividual IRI="#ConcentrationOfP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WaterProperty"/>
+        <NamedIndividual IRI="#ConcentrationOfP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightIntensityProperty"/>
+        <NamedIndividual IRI="#DailyIntegratedPPFD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TemperatureProperty"/>
+        <NamedIndividual IRI="#DayTemperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RootingMediumProperty"/>
+        <NamedIndividual IRI="#ElectricalConductivity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NutritionalProperty"/>
+        <NamedIndividual IRI="#ExtractableContentOfN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NutritionalProperty"/>
+        <NamedIndividual IRI="#FertilizerAmount"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NutritionalProperty"/>
+        <NamedIndividual IRI="#FertilizerType"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightIntensityProperty"/>
+        <NamedIndividual IRI="#FractionOfOutsideLightLightIncorporatedByGrowthFacilityAndSurroundingStructures"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirHumidityProperty"/>
+        <NamedIndividual IRI="#HumidityDuringLightPeriod"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirHumidityProperty"/>
+        <NamedIndividual IRI="#HumidityDuringNight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WateringProcessProperty"/>
+        <NamedIndividual IRI="#IrrigationFrequency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WateringProcessProperty"/>
+        <NamedIndividual IRI="#IrrigationType"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightIntensityProperty"/>
+        <NamedIndividual IRI="#LengthOfLightPeriod"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightIntensityProperty"/>
+        <NamedIndividual IRI="#LightIntensity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TemperatureProperty"/>
+        <NamedIndividual IRI="#NightTemperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RootingProcessProperty"/>
+        <NamedIndividual IRI="#NumberOfPlantsPerUnit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RootingMediumProperty"/>
+        <NamedIndividual IRI="#OrganicMatterContent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RootingMediumProperty"/>
+        <NamedIndividual IRI="#Porosity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightIntensityProperty"/>
+        <NamedIndividual IRI="#RangeInPeakLightIntensity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WateringProcessProperty"/>
+        <NamedIndividual IRI="#RangeInWaterPotential"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RootingMediumProperty"/>
+        <NamedIndividual IRI="#RootingMediumTemperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RootingMediumProperty"/>
+        <NamedIndividual IRI="#RootingMediumType"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RootingMediumProperty"/>
+        <NamedIndividual IRI="#SoilPenetrationStrength"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RootingProcessProperty"/>
+        <NamedIndividual IRI="#SowingDensity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AquaticProperty"/>
+        <NamedIndividual IRI="#SubmergingDepth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AquaticProperty"/>
+        <NamedIndividual IRI="#SubmergingTime"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AquaticProperty"/>
+        <NamedIndividual IRI="#TidalPhase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightQualityProperty"/>
+        <NamedIndividual IRI="#TypesOfLampsUsed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirHumidityProperty"/>
+        <NamedIndividual IRI="#VPDDuringLightPeriod"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AirHumidityProperty"/>
+        <NamedIndividual IRI="#VPDDuringNight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WateringProcessProperty"/>
+        <NamedIndividual IRI="#VolumeOfWaterAdded"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RootingMediumProperty"/>
+        <NamedIndividual IRI="#WaterRetentionCapacity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RootingMediumProperty"/>
+        <NamedIndividual IRI="#pH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightQualityProperty"/>
+        <NamedIndividual IRI="#R/FRRatio"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="rdfs:comment"/>
+        <NamedIndividual abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Central entity of the MIAPPE ontology - a respresentation of plant pehnotyping experiment</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasValue"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#appliesTo"/>
         <Class IRI="#Operation_or_Event"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#contains"/>
-        <Class IRI="#ExperimentUnit_or_ObservationUnit"/>
+        <Class IRI="#ExperimentUnit"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#describes"/>
@@ -352,16 +1452,8 @@
         <Class IRI="#Experiment"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasCoordinates"/>
-        <Class IRI="#Location"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasEnvironment"/>
         <Class IRI="#Experiment"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasEnvironmentVariable"/>
-        <Class IRI="#Environment"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasExperimentUnit"/>
@@ -374,10 +1466,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasExperimentalDesign"/>
         <Class IRI="#Experiment"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasGenotype"/>
-        <Class IRI="#Organism"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasGrowthFacility"/>
@@ -400,16 +1488,28 @@
         <Class IRI="#Experiment"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTime"/>
         <Class IRI="#Operation_or_Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#ExperimentUnit"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasUnit"/>
         <Class IRI="#QuantitativeData"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasValue"/>
+        <Class IRI="#Operation_or_Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hosts"/>
-        <Class IRI="#ExperimentUnit_or_ObservationUnit"/>
+        <Class IRI="#ExperimentUnit"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isValueOf"/>
@@ -445,11 +1545,11 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#appliesTo"/>
-        <Class IRI="#ExperimentUnit_or_ObservationUnit"/>
+        <Class IRI="#ExperimentUnit"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#describes"/>
-        <Class IRI="#ExperimentUnit_or_ObservationUnit"/>
+        <Class IRI="#ExperimentUnit"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#generates"/>
@@ -460,20 +1560,12 @@
         <Class IRI="#Organism"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasCoordinates"/>
-        <Class abbreviatedIRI="geo:SpatialObject"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasEnvironment"/>
         <Class IRI="#Environment"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasEnvironmentVariable"/>
-        <Class IRI="#EnvironmentalVariable"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasExperimentUnit"/>
-        <Class IRI="#ExperimentUnit_or_ObservationUnit"/>
+        <Class IRI="#ExperimentUnit"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasExperimentVariable"/>
@@ -482,10 +1574,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasExperimentalDesign"/>
         <Class IRI="#ExperimentDesign"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasGenotype"/>
-        <Class IRI="#Genotype"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasGrowthFacility"/>
@@ -497,11 +1585,11 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasLocation"/>
-        <Class IRI="#Location"/>
+        <Class IRI="#ExperimentLocation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasMethod"/>
-        <Class IRI="#Method_or_Protocol"/>
+        <Class IRI="#Method"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasOperation"/>
@@ -512,8 +1600,16 @@
         <Class IRI="#Time"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#ExternalOntologyTerm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasUnit"/>
         <Class IRI="#Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasValue"/>
+        <Class IRI="#Data"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hosts"/>
@@ -525,7 +1621,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#locatedIn"/>
-        <Class IRI="#Location"/>
+        <Class IRI="#ExperimentLocation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#measures"/>
@@ -539,6 +1635,62 @@
         <ObjectProperty IRI="#sets"/>
         <Class IRI="#Data"/>
     </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAltitude"/>
+        <DataProperty IRI="#hasCoordinates"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasArea"/>
+        <DataProperty IRI="#hasDimension"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasCommonName"/>
+        <DataProperty IRI="#hasName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasGeographicName"/>
+        <DataProperty IRI="#hasName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasHeight"/>
+        <DataProperty IRI="#hasDimension"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasInfraspecificName"/>
+        <DataProperty IRI="#hasName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLatitude"/>
+        <DataProperty IRI="#hasCoordinates"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLongitude"/>
+        <DataProperty IRI="#hasCoordinates"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasReleaseDate"/>
+        <DataProperty IRI="#hasDateTime"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasStartDate"/>
+        <DataProperty IRI="#hasDateTime"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSubmissionDate"/>
+        <DataProperty IRI="#hasDateTime"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasTaxonomicName"/>
+        <DataProperty IRI="#hasName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasTitle"/>
+        <DataProperty IRI="#hasName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasVolume"/>
+        <DataProperty IRI="#hasDimension"/>
+    </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#isFormOf"/>
         <DataProperty IRI="#isRankOf"/>
@@ -560,8 +1712,12 @@
         <DataProperty IRI="#isRankOf"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="#Organism"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasAspect"/>
-        <Class IRI="#Location"/>
+        <Class IRI="#ExperimentLocation"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasCommonName"/>
@@ -569,19 +1725,19 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasCoordinates"/>
-        <Class IRI="#Location"/>
+        <Class IRI="#ExperimentLocation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGenotype"/>
+        <Class IRI="#Organism"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasHabitat"/>
-        <Class IRI="#Location"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasID"/>
-        <Class IRI="#Experiment"/>
+        <Class IRI="#ExperimentLocation"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasInclination"/>
-        <Class IRI="#Location"/>
+        <Class IRI="#ExperimentLocation"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasInfraspecificName"/>
@@ -593,12 +1749,20 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasName"/>
-        <Class IRI="#Location"/>
+        <Class IRI="#ExperimentLocation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTaxonomicName"/>
+        <Class IRI="#Organism"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasTitle"/>
-        <Class IRI="#Experiment"/>
+        <Class IRI="#Investigation"/>
     </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasAspect"/>
         <Datatype abbreviatedIRI="xsd:string"/>
@@ -609,7 +1773,19 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasCoordinates"/>
-        <Datatype abbreviatedIRI="geol:wktLiteral"/>
+        <Datatype abbreviatedIRI="geof:wktLiteral"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDateTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGenotype"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasHabitat"/>
@@ -636,12 +1812,176 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#hasTaxonomicName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#hasTitle"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AbstractUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AbstractUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BiosourceGroup</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A unit identified by specific Biosource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CO2Property</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Co2Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Column</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Column</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataFile</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DataFile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Environment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">subclasses to be described with environmental properties (required by MIAPPE) and validated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Experiment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A plant phenotyping experiment conducted within a research project.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Experiment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Equivalent of ISA Study concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ExperimentUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A unit (a group of organisms, an organism, or its fraction) to which experimental operations apply. Can contain smaller units, be a part of bigger units, or intersect with other units.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ExperimentUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">or: ObservationTier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ExperimentVariable</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">consists of Crop Ontology triplet: trait, method, scale/unit. Might require changing (units associated with the value, method with the operation)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ExperimentalDesignGroup</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A unit identified by physical arrangement of the experiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ExternalOntologyTerm</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tmp examples to test external ontology references. The instances of general concepts from MIAPPE should be related to recommended(?) external ontologies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ExternalOntologyTerm</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">to be removed; test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Institution</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">to be described and linked to investigation/experiment authors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Institution</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Institution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Investigation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">or: Research project, Project,</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Location</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PhysicalUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Row</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Row</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SpacialObject</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">to be moved; eventually should be included in external ontologies ref</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Time</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">to be modified to describe different time scenarios: point, repeated events, periods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAltitude</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasAltitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDateTime</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasDateTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDescription</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasDescription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDuration</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasDuration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasGeographicName</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasGeographicName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLatitude</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasLatitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLongitude</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasLongitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasReleaseDate</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasReleaseDate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStartDate</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasStartDate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSubmissionDate</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasSubmissionDate</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 

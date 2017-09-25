@@ -1,0 +1,22 @@
+digraph g {
+	rankdir=LR;
+	"RootingMediumProperty" -> "SoilPenetrationStrength" [label="has individual"]
+	"RootingMediumProperty" -> "OrganicMatterContent" [label="has individual"]
+	"RootingMediumProperty" -> "RootingMediumTemperature" [label="has individual"]
+	"RootingMediumProperty" -> "Porosity" [label="has individual"]
+	"EnvironmentProperty" -> "WateringProperty" [label="has subclass"]
+	"RootingMediumProperty" -> "pH" [label="has individual"]
+	"RootingMediumProperty" -> "RootingMediumType" [label="has individual"]
+	"EnvironmentProperty" -> "BioticProperty" [label="has subclass"]
+	"RootingMediumProperty" -> "WaterRetentionCapacity" [label="has individual"]
+	"RootingMediumProperty" -> "Composition" [label="has individual"]
+	"RootingMediumProperty" -> "ElectricalConductivity" [label="has individual"]
+	"RootingProcessProperty" -> "NumberOfPlantsPerUnit" [label="has individual"]
+	"EnvironmentProperty" -> "AquaticProperty" [label="has subclass"]
+	"EnvironmentProperty" -> "AerialProperty" [label="has subclass"]
+	"EnvironmentProperty" -> "RootingProperty" [label="has subclass"]
+	"RootingProperty" -> "RootingMediumProperty" [label="has subclass"]
+	"RootingProcessProperty" -> "SowingDensity" [label="has individual"]
+	"EnvironmentProperty" -> "NutritionalProperty" [label="has subclass"]
+	"RootingProperty" -> "RootingProcessProperty" [label="has subclass"]
+}
